@@ -1,0 +1,2 @@
+class HeloController < ApplicationController
+end
