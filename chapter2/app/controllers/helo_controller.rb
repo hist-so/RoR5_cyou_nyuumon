@@ -32,7 +32,19 @@ class HeloController < ApplicationController
         # render html: html.html_safe
         
         #p86,
-        @title = 'viewサンプル'
-        @msg   = 'コントローラーに用意した値です。'
+        # @title = 'viewサンプル'
+        # @msg   = 'コントローラーに用意した値です。'
+        
+        # p88,
+        if params['msg'] != nil then
+            @title = params['msg']
+        else
+            @title = 'index'
+        end
+        @msg = 'this is redirect sample...'
+    end
+    
+    def other
+        redirect_to action: :index, params: {'msg': 'from other page'}
     end
 end
