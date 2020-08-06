@@ -30,5 +30,9 @@ class HeloController < ApplicationController
         #         </html>
         #       '
         # render html: html.html_safe
+        
+        #p86,
+        @title = 'viewサンプル'
+        @msg   = 'コントローラーに用意した値です。'
     end
 end
