@@ -51,15 +51,30 @@ class HeloController < ApplicationController
     # p93
     
     # protect_from_forgery
+    # def index
+    #     if request.post? then
+    #         @title = 'Result'
+    #         @msg   = 'you typed:' + params['input1'] + '.'
+    #         @value = params['input1']
+    #     else
+    #         @title = 'Index'
+    #         @msg   = 'type text...'
+    #         @value = ''
+    #     end
+    # end
+    
+    # p103
     def index
         if request.post? then
             @title = 'Result'
-            @msg   = 'you typed:' + params['input1'] + '.'
-            @value = params['input1']
+            if params['check1']  then
+                @msg = 'you checked!'
+            else
+                @msg = 'not checked...'
+            end
         else
             @title = 'Index'
-            @msg   = 'type text...'
-            @value = ''
+            @msg   = 'check it...'
         end
     end
 end
