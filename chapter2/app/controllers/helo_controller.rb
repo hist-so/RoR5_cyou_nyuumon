@@ -50,7 +50,7 @@ class HeloController < ApplicationController
     
     # p93
     
-    protect_from_forgery
+    # protect_from_forgery
     def index
         if request.post? then
             @title = 'Result'
