@@ -27,3 +27,5 @@ Things you may want to cover:
 note:
 ・Rspec導入後にdb:mgrateできなくなる問題
 　https://qiita.com/_ayk_study/items/1cdd05cc146d8102fbf4
+・shouldaがNoMethodErrorになる問題
+　→バージョン指定は教科書に合わせる。rspec/shoudaのバージョン次第ではエラーになる。

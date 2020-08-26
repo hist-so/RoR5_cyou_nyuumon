@@ -1,10 +1,10 @@
 require 'rails_helper'
-
+require 'spec_helper'
 # RSpec.describe Event, :type => :model do
 #   pending "add some examples to (or delete) #{__FILE__}"
 # end
 
-
+# Rspecの記述
 RSpec.describe Event, :type => :model do
     describe '#name' do
         context '空白のとき' do
@@ -56,3 +56,10 @@ end
 
 
 
+# Rspec+shouldaの記述
+    RSpec.describe Event, :type => :model do
+        describe '#name' do
+            it {is_expected.to validate_presence_of(:name)}
+            it {should ensure_length_of(:name).is_at_most(50)}
+        end
+    end
