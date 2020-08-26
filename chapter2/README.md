@@ -22,3 +22,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+note:
+・Rspec導入後にdb:mgrateできなくなる問題
+　https://qiita.com/_ayk_study/items/1cdd05cc146d8102fbf4
