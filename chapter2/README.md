@@ -29,3 +29,5 @@ note:
 　https://qiita.com/_ayk_study/items/1cdd05cc146d8102fbf4
 ・shouldaがNoMethodErrorになる問題
 　→バージョン指定は教科書に合わせる。rspec/shoudaのバージョン次第ではエラーになる。
+・spec_helper.rbにFactoryGirlの省略記述をすると、RSpec実行時にuninitialized consonantになる問題
+　http://rails.takayukikoyama.com/rspec/rspec-factorygirl/

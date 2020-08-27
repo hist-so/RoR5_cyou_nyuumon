@@ -63,3 +63,22 @@ end
             it {should ensure_length_of(:name).is_at_most(50)}
         end
     end
+
+#Rspec+FactoryGirlの記述/教科書よりテストケースを自分用に変更??????
+    RSpec.describe Event, :type => :model do
+        describe '#created_by?' do
+            let(:event){create(:event)}
+            subject{event.valid?}
+            
+            
+            # context '引数がnilのとき' do
+            #     let(:name){nil}
+            #     it {should be_falsey}
+            # end
+            
+            # context '#owner_idと引数の#idが同じとき' do
+            #     let(:name){double('user', id: event.id)}
+            #     it {should be_truty}
+            # end
+        end
+    end
